@@ -1,0 +1,181 @@
+/* #region Variables */
+:root {
+  /* Fonts */
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Colors */
+  --primary-brand-cl: #4d5ae5;
+  --pressed-state-cl: #404bbf;
+  --dark-cl: #2e2f42;
+  --success-cl: #31d0aa;
+  --text-cl: #434455;
+  --subtle-text-cl: #8e8f99;
+  --accent-cl: #e7e9fc;
+  --light-cl: #f4f4fd;
+  --modal-overlay-cl: rgba(46, 47, 66, 0.4);
+  --hero-bg-cl: rgba(46, 47, 66, 0.7);
+  --white-bg-cl: #fff;
+  --modal-bg-cl: #fcfcfc;
+
+  /* Font-Weights */
+  --base-weight: 400;
+  --lg-weight: 500;
+  --xl-weight: 700;
+}
+
+/* #endregion Variables */
+
+/* #region Base-Styles */
+body {
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-cl);
+  background-color: var(--white-bg-cl);
+
+  /* Default values */
+  font-size: 16px;
+  font-weight: var(--base-weight);
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+/* #endregion Base-Styles */
+
+/* #region Common-Styles */
+.page-title {
+  font-weight: var(--xl-weight);
+  letter-spacing: 0.02em;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--white-bg-cl);
+}
+
+.btn {
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: var(--lg-weight);
+  color: var(--white-bg-cl);
+  background-color: var(--primary-brand-cl);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--pressed-state-cl);
+}
+
+.section-title {
+  font-weight: var(--xl-weight);
+  letter-spacing: 0.02em;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  color: var(--dark-cl);
+  text-transform: capitalize;
+}
+
+.section-subtitle {
+  font-weight: var(--lg-weight);
+  letter-spacing: 0.02em;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-cl);
+}
+
+.text {
+  color: var(--text-cl);
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  color: var(--primary-brand-cl);
+  font-size: 18px;
+  font-weight: var(--xl-weight);
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* #endregion Common-Styles */
+
+/* #region Header */
+.logo-header-accent {
+  color: var(--dark-cl);
+}
+
+.nav-items {
+  font-weight: var(--lg-weight);
+}
+
+.nav-link {
+  color: var(--dark-cl);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--pressed-state-cl);
+}
+
+.address-link {
+  color: currentColor;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--pressed-state-cl);
+}
+/* #endregion Header */
+
+/* #rerion Hero */
+.hero {
+  background-color: var(--dark-cl);
+}
+/* #endrerion Hero */
+
+/* #region Benefits */
+/* #endregion Benefits */
+
+/* #region Our-Team */
+.team {
+  background-color: var(--light-cl);
+  text-align: center;
+}
+
+.employee-card {
+  background-color: var(--white-bg-cl);
+}
+/* #endregion Our-Team */
+
+/* #region Our-Portfolio */
+/* #endregion Our-Portfolio */
+
+/* #region Footer */
+.footer {
+  background-color: var(--dark-cl);
+}
+
+.logo-footer-accent {
+  color: var(--light-cl);
+}
+
+.footer-text {
+  color: var(--light-cl);
+}
+/* #endregion Footer */
