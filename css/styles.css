@@ -213,13 +213,6 @@ img {
 
 /* #endregion Hero */
 /* #region Benefits */
-.benefits-list {
-  display: flex;
-  justify-content: space-between;
-}
-.benefits-item {
-  max-width: 264px;
-}
 .benefits-item .section-subtitle {
   margin-bottom: 8px;
 }
