@@ -110,8 +110,10 @@ img {
   margin: 0 auto;
   display: block;
   padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
   border-radius: 4px;
-  border: 1px solid transparent;
+  border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .btn:hover,
@@ -146,7 +148,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: block;
+  display: inline-block;
 }
 /* Card set */
 .card-set {
@@ -160,6 +162,9 @@ img {
 }
 /* #endregion Common-Styles */
 /* #region Header */
+.logo-header {
+  margin-right: 76px;
+}
 .header {
   border-bottom: 1px solid var(--accent-cl);
 }
@@ -176,10 +181,10 @@ img {
   margin-right: 332px;
   align-items: center;
 }
-.nav-item {
+.nav-list {
   font-weight: 500;
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 .nav-link {
   color: var(--dark-cl);
@@ -192,7 +197,7 @@ img {
 }
 .address-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
   height: 100%;
   align-items: center;
 }
@@ -220,7 +225,6 @@ img {
 /* #region Team */
 .team {
   background-color: var(--light-cl);
-  text-align: center;
 }
 .employee-card {
   background-color: var(--white-bg-cl);
@@ -230,10 +234,11 @@ img {
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   padding-bottom: 32px;
 }
-.employee-card-picture {
-  margin-bottom: 32px;
+.employee-card-data {
+  padding: 32px 0;
+  text-align: center;
 }
-.employee-card .section-subtitle {
+.employee-card-data .section-subtitle {
   margin-bottom: 8px;
 }
 /* #endregion Team */
@@ -242,25 +247,23 @@ img {
   --indent-row: 48px;
   --items: 3;
 }
-.portfolio-list-item {
+.portfolio-card-data {
   border: 1px solid var(--accent-cl);
-  padding-bottom: 32px;
+  border-top: none;
+  padding: 32px 16px;
 }
-.portfolio-list-item .section-subtitle {
+.portfolio-card-data .section-subtitle {
   margin-bottom: 8px;
-}
-.portfolio-list-item-picture {
-  margin-bottom: 32px;
 }
 /* #endregion Portfolio */
 /* #region Footer */
 .footer {
   background-color: var(--dark-cl);
   height: 312px;
-  padding-top: 101.5px;
+  padding: 100px 0;
 }
 .logo-footer {
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 .logo-footer-accent {
   color: var(--light-cl);
